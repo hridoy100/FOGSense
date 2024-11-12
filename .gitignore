@@ -191,7 +191,7 @@ env/
 *.nbconvert.ipynb
 
 # Data files (uncomment if needed)
-# *.csv
+ *.csv
 # *.xlsx
 # *.json
 
