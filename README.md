@@ -4,20 +4,7 @@ Neural network system for Parkinson's Freezing of Gait detection with federated 
 
 ## Project Structure
 
-```
-parkinsons-fog-detection/
-├── data/
-│   ├── csv/                  # Raw and processed CSV files
-│   ├── mean_subtract/        # Processed data directory
-│   └── gaf_images/          # GAF images for CNN
-├── models/
-│   └── cnn_models.py        # CNN architecture
-└── notebooks/
-    ├── preprocess-for-cnn.ipynb
-    ├── train-model.ipynb
-    └── federated_learning.ipynb
-    
-    
+```    
 parkinsons-fog-detection/
 ├── data/
 │   ├── csv/                      # Raw and processed CSV files
