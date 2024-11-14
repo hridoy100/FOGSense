@@ -18,7 +18,7 @@ parkinsons-fog-detection/
 │   └── cnn_models.py            # CNN architecture definitions
 └── notebooks/
     ├── preprocess-for-cnn.ipynb              # Data preprocessing
-    ├── image_training_with_multi_channel_cnn.ipynb   # Non federated image training              # Data preprocessing
+    ├── image_training_with_multi_channel_cnn.ipynb              # Non-Federated image training
     ├── federated_learning_weighted_avg.ipynb
     └── federated_learning_with_resource_monitor.ipynb
 ```
