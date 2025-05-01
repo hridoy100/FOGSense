@@ -1,5 +1,7 @@
 # This is the main repository of the code behind the paper: https://arxiv.org/pdf/2411.11764
 
+# Detailed Webpage view: https://hridoy100.github.io/FOGSense/
+
 # Parkinson's FOG Detection
 
 Neural network system for Parkinson's Freezing of Gait detection with federated learning and resource monitoring.
