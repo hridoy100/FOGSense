@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>FOGSense</title>
+
+    <meta property="og:title" content="FOGSense">
+    <meta property="og:description"
+        content="Freezing of Gait Detection Using Gramian Angular Fields and Federated Learning from Wearable Sensors">
+    <meta property="og:type" content="website">
+    <meta name="keywords"
+        content="Parkinson's Disease, Freezing of Gait, FOG Detection, Gramian Angular Fields, Federated Learning, Wearable Sensors, CNN">
+    <style>
+        body {
+            font-family: 'Poppins';
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+        }
+
+        .container {
+            max-width: 59rem;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .link-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: -0.5rem;
+        }
+
+        .external-link {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 0.1rem;
+            transition: background-color 0.3s;
+            border-radius: 0.3rem;
+
+            display: flex;
+            flex-direction: row;
+            gap: 0.2rem;
+        }
+
+        .icon {
+            margin-top: 0.2rem;
+        }
+
+        .gray-border {
+            border: 0.1rem solid gray;
+            border-collapse: collapse;
+        }
+
+        .black-border {
+            border: 0.5rem solid black;
+            border-collapse: collapse;
+        }
+
+        .bg-gray {
+            background-color: gainsboro;
+        }
+
+        .center-align {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .dark-font {
+            color: black;
+            font-weight: bolder;
+        }
+
+        .responsive-flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+
+        .half-width {
+            width: 49%;
+        }
+
+        .feature-box {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .performance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+
+        .performance-table th, .performance-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .performance-table th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+
+        .performance-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .model-diagram {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .responsive-flex {
+                flex-direction: column;
+            }
+
+            .half-width {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div style="text-align: center; margin-top: 3rem; display: flex; align-items: center; justify-content: center;">
+            <img src="images/logo.png" alt="Logo" style="width: 4rem; margin-bottom: 0.8rem; margin-right: 1rem;">
+            <h1>FOGSense</h1>
+        </div>
+        <h2 style="text-align: center; margin-top: -1.5rem; font-weight: 500">Freezing of Gait Detection Using Gramian Angular Fields and Federated Learning from Wearable Sensors</h2>
+
+        <h4 style="text-align: center; margin-top: -1rem; font-weight: 500">
+            <a href="#">Shovito Barua Soumma</a>
+            <sup style="color: blue">1</sup>,
+            <a href="#">S M Raihanul Alam</a>
+            <sup style="color: green">2</sup> <sup>*</sup>,
+            <a href="#">Rudmila Rahman</a>
+            <sup style="color: green">3</sup> <sup>*</sup>,
+            <a href="#">Umme Niraj Mahi</a>
+            <sup style="color: orange">4</sup>,
+            <a href="#">Abdullah Mamun</a>
+            <sup style="color: blue">1,5</sup>,
+            <a href="#">Sayyed Mostafa Mostafavi</a>
+            <sup style="color: blue">1</sup>,
+            <a href="#">Hassan Ghasemzadeh</a>
+            <sup style="color: blue">1</sup><sup style="color: black; font-family: 'Roboto', sans-serif; font-weight: 120; font-size: 1rem; margin-left: 2px;">†</sup>
+        </h4>
+
+        <p style="text-align: center; margin-top: -1rem; font-weight: 500; font-size: medium;">
+            <sup style="color: blue">1</sup>
+            College of Health Solutions, Arizona State University, Phoenix, AZ, USA
+        </p>
+        <p style="text-align: center; margin-top: -1.2rem; font-weight: 500; font-size: medium;">
+            <sup style="color: green">2</sup>
+            Department of CSE, Bangladesh University of Engineering and Technology, Dhaka, Bangladesh
+            <br>
+            <sup style="color: green">3</sup>
+            Department of EEE, Bangladesh University of Engineering and Technology, Dhaka, Bangladesh
+        </p>
+        <p style="text-align: center; margin-top: -1.2rem; font-weight: 500; font-size: medium;">
+            <sup style="color: orange">4</sup>
+            Department of CSE, Khulna University of Engineering and Technology, Khulna, Bangladesh
+        </p>
+        <p style="text-align: center; margin-top: -1.2rem; font-weight: 500; font-size: medium;">
+            <sup style="color: blue">5</sup>
+            School of Computing and Augmented Intelligence, Arizona State University, Phoenix, AZ, USA
+        </p>
+
+        <span style="font-weight: 500; display: flex; align-items: center; text-align: center; justify-content: center; font-size: medium; margin-top: -1.2rem;">
+            <h1 style="font-family: 'Roboto', sans-serif; font-weight: 150; font-size: 1.2rem; margin-right: 4px;">†</h1> Corresponding to&nbsp;<a href="mailto:hassan.ghasemzadeh@asu.edu">hassan.ghasemzadeh@asu.edu</a>
+        </span>
+
+        <span style="font-weight: 500; display: flex; align-items: center; text-align: center; justify-content: center; font-size: medium; margin-top: -1.2rem;">
+            <h1 style="font-family: 'Roboto', sans-serif; font-weight: 150; font-size: 1.2rem; margin-right: 4px;">*</h1> Equal Contribution
+        </span>
+
+        <div style="margin-top: 1rem;"></div>
+
+        <span class="link-block" style="margin-top: -0.5rem;">
+            <a href="https://arxiv.org/abs/2411.11764" class="external-link" style="background-color:#363636; display: flex; align-items: center; padding-top: 8px; padding-bottom: 8px;">
+                <i class="ai ai-arxiv" style="margin-right: 4px;"></i>
+                <span>arXiv</span>
+            </a>
+
+            <a href="https://github.com/hridoy100/FOGSense" class="external-link" style="background-color:#363636; display: flex; align-items: center; padding-top: 8px; padding-bottom: 8px;">
+                <i class="fab fa-github" style="margin-right: 4px;"></i>
+                <span>Code</span>
+            </a>
+
+            <a href="#dataset" class="external-link" style="background-color:#363636; display: flex; align-items: center; padding-top: 8px; padding-bottom: 8px;">
+                <i class="fa-solid fa-database" style="margin-right: 4px;"></i>
+                <span>Dataset</span>
+            </a>
+
+            <a href="#results" class="external-link" style="background-color:#363636; display: flex; align-items: center; padding-top: 8px; padding-bottom: 8px;">
+                <i class="fa-solid fa-chart-bar" style="margin-right: 4px;"></i>
+                <span>Results</span>
+            </a>
+        </span>
+
+        <img src="images/Whole_system_final.png" alt="Overview" style="width: 100%; margin-top: 2rem;">
+        <p>Figure 1: System architecture illustrating the federated learning workflow: local models are trained and uploaded by devices, then aggregated into a global model, which is distributed back to each device.</p>
+
+        <h2 style="text-align: center;">Abstract</h2>
+        <p>
+            Freezing of gait (FOG) is a debilitating symptom of Parkinson's disease (PD) that impairs mobility and safety. Traditional detection methods face challenges due to intra and inter-patient variability, and most systems are tested in controlled settings, limiting their real-world applicability. Addressing these gaps, we present FOGSense, a novel FOG detection system designed for uncontrolled, free-living conditions. It uses Gramian Angular Field (GAF) transformations and federated deep learning to capture temporal and spatial gait patterns missed by traditional methods. We evaluated our FOGSense system using a public PD dataset, 'tdcsfog'. FOGSense improves accuracy by 10.4% over a single-axis accelerometer, reduces failure points compared to multi-sensor systems, and demonstrates robustness to missing values. The federated architecture allows personalized model adaptation and efficient smartphone synchronization during off-peak hours, making it effective for long-term monitoring as symptoms evolve. Overall, FOGSense achieves a 22.2% improvement in F1-score compared to state-of-the-art methods, along with enhanced sensitivity for FOG episode detection.
+        </p>
+
+        <h2 style="text-align: center;">System Overview</h2>
+        <div class="responsive-flex">
+            <div class="half-width">
+                <div class="feature-box">
+                    <h3 class="feature-title">Core Functionality</h3>
+                    <ul class="feature-list">
+                        <li>Multi-channel CNN for FOG detection</li>
+                        <li>Federated learning with weighted averaging</li>
+                        <li>GAF transformation of accelerometer data</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <h3 class="feature-title">Resource Monitoring</h3>
+                    <ul class="feature-list">
+                        <li>Real-time tracking of:
+                            <ul>
+                                <li>CPU utilization</li>
+                                <li>Memory usage</li>
+                                <li>GPU utilization and memory</li>
+                                <li>Training metrics</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="half-width">
+                <img src="images/GAF.png" alt="GAF Transformation" style="width: 90%; margin-top: 1rem;">
+                <p style="text-align: center;">Figure 2: GAF-transformed images for No-FOG, FOG conditions, and the differences between them. Significant differences are highlighted with red boxes.</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center;" id="dataset">Dataset & Methodology</h2>
+        <p>
+            We used the publicly available PD dataset from the TLVMC FOG prediction competition. The dataset has 62 subjects diagnosed with Parkinson's disease, specifically focusing on FOG episodes. The analysis concentrated on the 'tdcsfog' dataset. Data were collected via a lower-back triaxial accelerometer at 128 Hz, capturing vertical (AccV), mediolateral (AccML), and anteroposterior (AccAP) movements, critical for identifying directional mobility loss during FOG events.
+        </p>
+
+        <div class="responsive-flex">
+            <div class="half-width">
+                <img src="images/class_distribution.png" alt="Class Distribution" style="width: 90%;">
+                <p style="text-align: center;">Figure 3: Class distribution normal and FOG events before and after applying Differential Hopping Windowing Technique (DHWT).</p>
+            </div>
+
+            <div class="half-width">
+                <div class="feature-box">
+                    <h3 class="feature-title">Dataset Split</h3>
+                    <ul class="feature-list">
+                        <li>62 subjects split:
+                            <ul>
+                                <li>Training: 69.4%</li>
+                                <li>Testing: 19.4%</li>
+                                <li>Validation: 11.3%</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <h3 class="feature-title">Pre-processing</h3>
+                    <ul class="feature-list">
+                        <li>Downsampled from 128Hz to 64Hz</li>
+                        <li>4-second time windows</li>
+                        <li>Differential Hopping Windowing Technique (DHWT)</li>
+                        <li>Mean value subtraction for normalization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="text-align: center;">Model Architecture</h2>
+        <img src="images/cnn.png" alt="CNN Architecture" class="model-diagram">
+        <p style="text-align: center;">Figure 4: The multichannel CNN architecture.</p>
+
+        <div class="feature-box">
+            <h3 class="feature-title">Model Structure</h3>
+            <ul class="feature-list">
+                <li>Three CNN branches (AccV, AccML, AccAP)</li>
+                <li>Each branch:
+                    <ul>
+                        <li>3 Conv2D layers (32->64->128 filters)</li>
+                        <li>Batch normalization</li>
+                        <li>MaxPooling and Dropout</li>
+                    </ul>
+                </li>
+                <li>Dense layers: 128->64->2</li>
+                <li>Softmax output</li>
+            </ul>
+        </div>
+
+        <h2 style="text-align: center;" id="results">Results</h2>
+
+        <table class="performance-table">
+            <thead>
+                <tr>
+                    <th>Detection Type</th>
+                    <th>Configuration</th>
+                    <th>Accuracy (%)</th>
+                    <th>F1 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Window-level (DFW)</td>
+                    <td>All Channels</td>
+                    <td>87.23</td>
+                    <td>90.31</td>
+                </tr>
+                <tr>
+                    <td>Episode-level (DFE)</td>
+                    <td>All Channels</td>
+                    <td>87.23</td>
+                    <td>90.86</td>
+                </tr>
+                <tr>
+                    <td>Federated Learning</td>
+                    <td>All Channels</td>
+                    <td>86.98</td>
+                    <td>90.47</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="text-align: center;">Table 1: FOGSense's performance for three different detection types using all three channels.</p>
+
+        <img src="images/result.png" alt="Performance Chart" style="width: 60%; margin-top: 2rem; display: block; margin-left: auto; margin-right: auto">
+        <p style="text-align: center;">Figure 5: Comparison of channel configurations in the FOGSense system shows that the vertical axis (AccV) obtains a better F1 score than other channel choices.</p>
+
+        <table class="performance-table">
+            <thead>
+                <tr>
+                    <th>Study</th>
+                    <th>DFE</th>
+                    <th>SEN (DFW)</th>
+                    <th>PRE</th>
+                    <th>F1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>One Class Classifier</td>
+                    <td>90.8%</td>
+                    <td>71.6%</td>
+                    <td>0.86</td>
+                    <td>0.77</td>
+                </tr>
+                <tr>
+                    <td>Semi-Supervised Model</td>
+                    <td>-</td>
+                    <td>72.3%</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Multi-head CNN</td>
+                    <td>97.3%</td>
+                    <td>94.6%</td>
+                    <td>0.56</td>
+                    <td>0.68</td>
+                </tr>
+                <tr>
+                    <td>LIFT-PD</td>
+                    <td>88%</td>
+                    <td>84%</td>
+                    <td>0.74</td>
+                    <td>0.79</td>
+                </tr>
+                <tr style="font-weight: bold;">
+                    <td>FOGSense</td>
+                    <td>-</td>
+                    <td>96.3%</td>
+                    <td>0.958</td>
+                    <td>0.963</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="text-align: center;">Table 2: FOGSense vs. state-of-the-art on tdcsfog.</p>
+
+        <h2 style="text-align: center;">Conclusion</h2>
+        <p>
+            Accurate detection of freezing of gait (FOG) can significantly enhance early intervention strategies, improve mobility support, and ultimately contribute to a better quality of life for individuals with Parkinson's disease. Our FOGSense system uses Gramian Angular Field (GAF) imaging, convolutional neural networks (CNN), and federated learning to ensure accurate and resource-efficient FOG detection in an uncontrolled environment. Moreover, FOGSense is robust to sensor failure as it needs only one channel to make an accurate prediction and it can delegate the prediction task to a different single-channel model by dynamic weight transfer in case of a channel failure.
+        </p>
+        <p>
+            Our work establishes a foundation for efficient, practical, and reliable FOG detection systems. We provide new insights into lightweight, single-channel solutions that outperform state-of-the-art multi-channel solutions. We also identified future research directions that could advance the field, from alternative data representations to federated learning enhancements and real-world validations. This study highlights the potential of FOGSense and opens avenues for refining FOG detection systems to meet clinical and practical demands more effectively.
+        </p>
+
+        <h2 style="text-align: center;">Cite Us</h2>
+<pre style="white-space: pre-wrap; word-wrap: break-word;">
+@article{soumma2024fogsense,
+  title={Freezing of Gait Detection Using Gramian Angular Fields and Federated Learning from Wearable Sensors},
+  author={Soumma, Shovito Barua and Alam, S M Raihanul and Rahman, Rudmila and Mahi, Umme Niraj and Mamun, Abdullah and Mostafavi, Sayyed Mostafa and Ghasemzadeh, Hassan},
+  journal={arXiv preprint arXiv:2411.11764},
+  year={2024}
+}
+</pre>
+
+    </div>
+</body>
+
+</html>
