@@ -1,4 +1,4 @@
-## This is the main repository of the code behind the paper: https://arxiv.org/pdf/2411.11764
+## This is the first and earlier version repository of the code behind the paper: https://arxiv.org/pdf/2411.11764
 
 #### Detailed Webpage view: https://hridoy100.github.io/FOGSense/
 
